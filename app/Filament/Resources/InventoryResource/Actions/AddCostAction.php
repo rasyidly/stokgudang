@@ -20,6 +20,7 @@ class AddCostAction extends Action
         $static->icon('heroicon-o-minus-circle')
             ->color('danger')
             ->label('Cost')
+            ->translateLabel()
             ->modalWidth(MaxWidth::Small)
             ->form([
                 Forms\Components\Group::make([

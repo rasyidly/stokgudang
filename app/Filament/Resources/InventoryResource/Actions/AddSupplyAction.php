@@ -20,6 +20,7 @@ class AddSupplyAction extends Action
         $static->icon('heroicon-o-plus-circle')
             ->color('success')
             ->label('Supply')
+            ->translateLabel()
             ->modalWidth(MaxWidth::Large)
             ->form([
                 Forms\Components\Group::make([
