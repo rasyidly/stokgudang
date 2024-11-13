@@ -24,6 +24,10 @@ class DatabaseSeeder extends Seeder
             'email' => 'test@example.com',
         ]);
 
+        if (app()->isProduction()) {
+            return;
+        }
+
         $supliers = Supplier::factory(10)->create();
 
         $inventories = Inventory::factory(100)->create();
